@@ -1,0 +1,110 @@
+.main-container {
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: rgba(30, 30, 30, 0.8);
+}
+
+.toolbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 30px;
+    padding: 4px;
+    background-color: rgba(40, 40, 40, 0.9);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(60, 60, 60, 0.8);
+}
+
+.toolbar Toggle {
+    margin-right: 8px;
+    min-width: 150px;
+}
+
+.toolbar Toggle .unity-toggle__input {
+    margin-right: 2px;
+}
+
+.toolbar Toggle:hover .unity-toggle__label {
+    color: rgb(220, 220, 220);
+}
+
+.toolbar ColorField {
+    min-width: 100px;
+    flex-grow: 0;
+}
+
+.tracker-canvas {
+    flex-grow: 1;
+    background-color: rgba(25, 25, 25, 0.6);
+    min-height: 100px;
+    position: relative;
+    border-width: 1px;
+    border-color: rgba(60, 60, 60, 0.5);
+}
+
+.crosshair-line {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition-property: background-color;
+    transition-duration: 0.15s;
+}
+
+.crosshair-horizontal {
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
+
+.crosshair-vertical {
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.tracker-canvas:hover .crosshair-line {
+    background-color: rgba(255, 255, 255, 1.0);
+    /* Subtle glow effect */
+    --unity-shadow-color: rgba(255, 255, 255, 0.5);
+}
+
+.selection-preview {
+    position: absolute;
+    border-width: 1px;
+    border-color: rgba(100, 150, 255, 0.8);
+    background-color: rgba(100, 150, 255, 0.1);
+    transition-property: border-color, background-color;
+    transition-duration: 0.15s;
+}
+
+.selection-preview:hover {
+    border-color: rgba(100, 150, 255, 1.0);
+    background-color: rgba(100, 150, 255, 0.15);
+}
+
+.info-panel {
+    height: auto;
+    min-height: 30px;
+    padding: 4px 8px;
+    background-color: rgba(35, 35, 35, 0.9);
+    border-top-width: 1px;
+    border-top-color: rgba(60, 60, 60, 0.8);
+}
+
+.info-label {
+    color: rgb(220, 220, 220);
+    font-size: 12px;
+    -unity-text-align: middle-left;
+    margin: 2px 0;
+}
+
+#coordinates-label {
+    color: rgb(250, 250, 250);
+    font-size: 13px;
+    -unity-font-style: bold;
+}
+
+#selection-size-label {
+    color: rgb(180, 215, 255);
+} 
